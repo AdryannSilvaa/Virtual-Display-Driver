@@ -1,72 +1,62 @@
 <p align="center">
-  <h1 align="center">Virtual Display Driver</h1>
+  <h1 align="center">Driver de Monitor Virtual</h1>
   <p align="center">
-    Add virtual monitors to your windows 10/11 device!
+    Adicione monitores virtuais ao seu dispositivo com Windows 10/11!  
     <br />
-    Works with VR, OBS, Sunshine, and/or any desktop sharing software.
+    Funciona com VR, OBS, Sunshine e/ou qualquer software de compartilhamento de área de trabalho.  
     <br />
-    Now with an easy to follow setup wizard!
+    Agora com um assistente de instalação fácil de seguir!
   </p>
 </p>
 
 <br>
 
-## ℹ About
+## ℹ Sobre
 
-This project is based on the "Virtual Display Driver" project and tries to improve on it.
+Este projeto é baseado no projeto "Virtual Display Driver" e busca aprimorá-lo.
 
-> Based on Microsoft Indirect Display Driver Sample. This creates a virtual display in Windows that acts and functions just like a real one. It's useful for streaming, virtual reality applications, recording, headless servers, etc. The benefit over a physical display is the ability to adjust resolutions and refresh rates beyond the physical displays capabilities. For example, this would enable the ability to stream a game from your home PC using game streaming software at 240hz at 8K while owning a 60hz 1080p monitor (unrealistic, but explains the abilities well). For servers without displays, this enabled remote desktop and screen streaming to other systems as if there were a display installed.
+> Baseado no exemplo oficial de Driver de Exibição Indireta da Microsoft (Microsoft Indirect Display Driver Sample). Este driver cria um monitor virtual no Windows que se comporta exatamente como um monitor físico. É útil para streaming, realidade virtual, gravação de tela, servidores headless, etc. A vantagem sobre um monitor físico é a possibilidade de ajustar resoluções e taxas de atualização além das capacidades do hardware. Por exemplo, seria possível fazer streaming de um jogo em 8K a 240Hz mesmo possuindo apenas um monitor 1080p a 60Hz (exemplo irreal, mas ilustra o potencial). Em servidores sem tela, isso permite uso de Área de Trabalho Remota e streaming de tela como se houvesse um monitor instalado.
 
-> Supports emulating resolutions from 640 x 480 to 7680 x 4320 (8K), and refresh rates including 60hz, 75hz, 90hz, 120hz, 144hz, 165hz, 240hz, 480hz, and 500hz.
+> Suporta emulação de resoluções de 640x480 até 7680x4320 (8K), e taxas de atualização como 60Hz, 75Hz, 90Hz, 120Hz, 144Hz, 165Hz, 240Hz, 480Hz e 500Hz.
 
-> This project uses the official Windows Indirect Display Driver combined with the IddCx class extension driver.
+> Este projeto utiliza o driver oficial de Exibição Indireta do Windows combinado com a extensão de classe `IddCx`.
 
-This project adds an easy to follow setup wizard and installer to install your Virtual Display. The setup wizard also lets you specify how many displays you want to add to your system without having to change any config file yourself.
-  
-I hope you enjoy this project and if you do i would appreciate a star rating :-)
+Este projeto adiciona um **assistente de instalação fácil de seguir**, permitindo que você escolha quantos monitores virtuais deseja adicionar ao seu sistema, sem a necessidade de editar arquivos de configuração manualmente.
 
-## Download Stable Version
+Espero que você goste deste projeto! Se gostar, deixe uma estrela no repositório ⭐😊
 
-> [!IMPORTANT]
-> Please make sure you download the correct version for your operating system!
+---
 
-- [Windows 10 and 11 (no HDR)](https://github.com/timminator/Virtual-Display-Driver/releases/tag/v1.0.1)
-- [Windows 11 23H2+ (HDR)](https://github.com/timminator/Virtual-Display-Driver/releases/tag/v1.0.1)
+## 📥 Baixar Versão Estável
 
-## Download Beta
-- [Universal Driver - 24.10.27 (Windows 10/11)](https://github.com/timminator/Virtual-Display-Driver/releases/tag/24.11.01)
+> ⚠️ **IMPORTANTE**
+> Certifique-se de baixar a versão correta para o seu sistema operacional!
 
-## Steps to get it running:
+* [Windows 10 e 11 (sem HDR)](https://github.com/timminator/Virtual-Display-Driver/releases/tag/v1.0.1)
+* [Windows 11 23H2+ (com HDR)](https://github.com/timminator/Virtual-Display-Driver/releases/tag/v1.0.1)
 
-1. Download the latest release and follow the instructions of the Setup Wizard.
+## 🔁 Baixar Versão Beta
 
-That's all you have to do! A Virtual Display should be added to your system!
+* [Driver Universal - 24.10.27 (Windows 10/11)](https://github.com/timminator/Virtual-Display-Driver/releases/tag/24.11.01)
 
-## Notes:
+---
 
-- If you receive a Windows Defender Smartscreen prompt when executing the setup, click on "More info" and then on "Run anyway".
+## ✅ Como usar:
 
-## Acknowledgements
+1. Baixe a versão mais recente.
+2. Execute o instalador e siga as instruções do assistente de instalação.
 
-- Huge shootout to the project [nefcon](https://github.com/nefarius/nefcon) by [nefarius](https://github.com/nefarius) and his contributors.
-Without this project this unattended installer would not have been possible!  
-Please check it out aswell.
+Isso é tudo! Um monitor virtual será adicionado ao seu sistema automaticamente!
 
-## Further notes for building the installer yourself  
+---
 
-- The installer does not use the latest version of the nefconw.exe because the Virtual Display Driver was not uninstalled correctly using version v1.11.0. Instead version v1.10.0 is used while building the installer using Inno Setup.
+## 📝 Observações
 
+* Se o Windows Defender exibir um alerta ao executar o instalador, clique em **“Mais informações”** e depois em **“Executar assim mesmo”**.
 
-## Acknowledgements of the original repo:
+---
 
-Shoutout to **[Bud](https://github.com/bud3699)** and **[zjoasan](https://github.com/zjoasan)** for jumping on the team and helping with not just support, but lots of great new features!
+## ⚙️ Observações adicionais sobre a criação do instalador
 
-Shoutout to **[Roshkins](https://github.com/roshkins/IddSampleDriver)** for the original repo.
-
-Shoutout to **[Baloukj](https://github.com/baloukj/IddSampleDriver)** for the 8-bit / 10-bit support. (Also, first to push the new Microsoft Driver public!)
-
-Shoutout to **[Anakngtokwa](https://github.com/Anakngtokwa)** for assisting with finding driver sources.
-
-**[Microsoft](https://github.com/microsoft/Windows-driver-samples/tree/master/video/IndirectDisplay)** Indirect Display Driver/Sample (Driver code)
-
-Thanks to **[AKATrevorJay](https://github.com/akatrevorjay/edid-generator)** for the hi-res EDID.
+* O instalador não usa a versão mais recente do `nefconw.exe` porque a versão `v1.11.0` não desinstalava corretamente o driver.
+  Em vez disso, a versão `v1.10.0` é utilizada durante a criação do instalador com o **Inno Setup**.
